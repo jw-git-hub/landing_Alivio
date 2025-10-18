@@ -1,0 +1,13 @@
+@media (max-width: 1080px) {
+    .burger {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    #nav-pc {
+        display: none;
+    }
+    #nav-mobile {
+        display: flex;
+    }
+}

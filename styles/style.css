@@ -1,0 +1,161 @@
+:root {
+    --decor-color: #01996D;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+.lato-regular,
+.nav>li>a, .mobile-nav>li>a, 
+.nav-buttons>button, .mobile-buttons>button {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.georgia-bold {
+    font-family: "Georgia", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.nav>li>a, .mobile-nav>li>a {
+    font-size: 20px;
+}
+
+a {
+    color: #292929;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--decor-color);
+}
+
+button {
+    background-color: #01996D;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #006f4f;
+}
+
+/* --- */
+
+body {
+    max-width: 1920px;
+}
+
+header {
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-header {
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-header {
+    width: 80px;
+    height: 23px;
+}
+
+.nav {
+    display: flex;
+    gap: 72px;
+}
+
+.nav-buttons {}
+
+.button1 {
+    font-size: 20px;
+    width: 183px;
+    height: 51px;
+    transition: color 0.3s ease;
+    background-color: inherit;
+}
+
+.button1:hover {
+    color: var(--decor-color);
+    background-color: inherit;
+}
+
+.button2 {
+    font-size: 20px;
+    color: #fff;
+    width: 183px;
+    height: 51px;
+}
+
+#nav-mobile {
+    display: none;
+}
+
+.burger {
+    display: none;
+    height: 50%;
+    padding: 7px 0;
+}
+.burger-line {
+    width: 40px;
+    height: 3px;
+    background-color: var(--decor-color);
+}
+.mobile-menu {
+    position: fixed;      
+    top: 0;             
+    right: -300px;        
+    width: 300px;         
+    height: 100vh;        
+    background: white;    
+    box-shadow: -5px 0 15px rgba(0,0,0,0.1); 
+    transition: right 0.3s ease; 
+    z-index: 1000;        
+    padding: 80px 20px 20px; 
+}
+.mobile-menu.active {
+    right: 0;             
+}
+.mobile-nav {
+    display: flex;
+    flex-direction: column; 
+    gap: 30px;            
+    margin-bottom: 30px;  
+}
+.mobile-buttons {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;            
+}
+/* Затемнение фона */
+.overlay {
+    position: fixed;      /* Фиксированное на весь экран */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5); /* Полупрозрачный черный */
+    opacity: 0;           /* Полностью прозрачный */
+    visibility: hidden;   /* Скрыт из потока */
+    transition: all 0.3s ease; /* Плавное появление */
+    z-index: 999;        /* Под меню, но над контентом */
+}
+
+.overlay.active {
+    opacity: 1;          /* Полная непрозрачность */
+    visibility: visible;  /* Становится видимым */
+}
