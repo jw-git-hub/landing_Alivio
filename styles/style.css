@@ -5,27 +5,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 .lato-regular,
-.nav>li>a, .mobile-nav>li>a, 
-.nav-buttons>button, .mobile-buttons>button {
+.nav>li>a, .mobile-nav>li>a, button, p.header, p.howItWorks, .howItWorks-p {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.lato-bold {
+.lato-bold, h2.howItWorks {
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
-.georgia-bold {
+.georgia-bold, h1, h3.howItWorks {
     font-family: "Georgia", serif;
     font-weight: 700;
     font-style: normal;
 }
+.georgia-regular, .howItWorks-head-numb {
+    font-family: "Georgia", serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
-.nav>li>a, .mobile-nav>li>a {
+.nav>li>a, .mobile-nav>li>a, button, p.header, p.howItWorks, .howItWorks-p {
     font-size: 20px;
+}
+h2.howItWorks {
+    font-size: 24px;
+}
+h3.howItWorks {
+    font-size: 50px;
+}
+.howItWorks-head-numb {
+    font-size: 150px;
 }
 
 a {
@@ -47,9 +60,9 @@ button:hover {
 }
 
 /* --- */
-
-body {
+header {
     max-width: 1920px;
+    margin: 0 auto;
 }
 
 header {
@@ -158,4 +171,99 @@ header {
 .overlay.active {
     opacity: 1;          /* Полная непрозрачность */
     visibility: visible;  /* Становится видимым */
+}
+.header-content {
+    background: url(../images/BG.png) center/cover no-repeat;
+    padding-top: 175px;
+}
+h1 {
+    color: var(--decor-color);
+    font-size: 65px;
+    margin-bottom: 30px;
+}
+p.header {
+    margin-bottom: 53px;
+}
+.header-button {
+    width: 227px;
+    height: 65px;
+    color: #fff;
+    margin-bottom: 336px;
+}
+div.howItWorks {
+    padding-top: 169px;
+}
+.head-howItWorks {
+    margin-bottom: 52px;
+}
+h2.howItWorks, p.howItWorks {
+    color: #424242;
+}
+.head-howItWorks-flex {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+}
+h3.howItWorks {
+    color: var(--decor-color);
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+p.howItWorks {
+    max-width: 671px;
+}
+.content-howItWorks-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.content-howItWorks-block {
+    max-width: 392px;
+}
+.content-howItWorks-flex > div:nth-of-type(2) {
+    margin-top: 287px;
+}
+.content-howItWorks-flex > div:nth-of-type(3) {
+    margin-top: 54px;
+}
+.howItWorks-head-numb {
+    color: rgba(1, 153, 109, 0.2);
+    position: relative;
+}
+.howItWorks-head {
+    font-size: 30px;
+    font-family: "Georgia", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #000;
+    position: absolute;
+    bottom: 45px;
+}
+#howItWorks-head1 {
+left: 88px;
+}
+#howItWorks-head2 {
+    left: 79px;
+}
+#howItWorks-head3 {
+    left: 124px;
+}
+.howItWorks-p {
+    margin-bottom: 40px;
+}
+
+.howItWorks-img1, .howItWorks-img2, .howItWorks-img3 {
+width: 392px;
+height: 492px;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.howItWorks-img1 {
+background-image: url(/images/img1.png);
+}
+.howItWorks-img2 {
+background-image: url(/images/img2.png);
+}
+.howItWorks-img3 {
+background-image: url(/images/img3.png);
 }
