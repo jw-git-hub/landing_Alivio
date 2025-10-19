@@ -26,8 +26,4 @@
     #nav-mobile {
         display: flex;
     }
-
-    .header-content {
-        background: url(../images/BG.png) left/cover no-repeat;
-    }
 }

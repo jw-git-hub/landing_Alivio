@@ -175,6 +175,7 @@ header {
 .header-content {
     background: url(../images/BG.png) center/cover no-repeat;
     padding-top: 175px;
+    background-attachment: fixed;
 }
 h1 {
     color: var(--decor-color);
