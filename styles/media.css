@@ -30,7 +30,15 @@
     .content-howItWorks-flex>div:nth-of-type(3) {
         margin-right: 300px;
     }
-
+.about>.container {
+    flex-direction: column;
+    gap: 62px;
+    align-items: center;
+}
+.about-left {
+    width: 100%;
+    max-width: 895px;
+}
 }
 
 @media (max-width: 1080px) {

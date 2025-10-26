@@ -5,19 +5,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 .lato-regular,
-.nav>li>a, .mobile-nav>li>a, button, p.header, p.howItWorks, .howItWorks-p {
+.nav>li>a, .mobile-nav>li>a, button, p.header, p.howItWorks, .howItWorks-p, .about-left>button {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.lato-bold, h2.howItWorks {
+.lato-bold, h2.howItWorks, .about-left>p {
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
-.georgia-bold, h1, h3.howItWorks {
+.georgia-bold, h1, h3.howItWorks, .about-left>h2 {
     font-family: "Georgia", serif;
     font-weight: 700;
     font-style: normal;
@@ -28,13 +28,13 @@
     font-style: normal;
 }
 
-.nav>li>a, .mobile-nav>li>a, button, p.header, p.howItWorks, .howItWorks-p {
+.nav>li>a, .mobile-nav>li>a, button, p.header, p.howItWorks, .howItWorks-p, .about-left>button {
     font-size: 20px;
 }
-h2.howItWorks {
+h2.howItWorks, .about-left>p {
     font-size: 24px;
 }
-h3.howItWorks {
+h3.howItWorks, .about-left>h2  {
     font-size: 50px;
 }
 .howItWorks-head-numb {
@@ -268,3 +268,60 @@ background-image: url(/images/img2.png);
 .howItWorks-img3 {
 background-image: url(/images/img3.png);
 }
+.about {
+    background-color: #245852;
+    padding-top: 229px;
+    padding-bottom: 177px;
+}
+.about>.container {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 31px;
+}
+.about-left {
+}
+.about-left>h2 {
+    color: #fff;
+    margin-bottom: 33px;
+}
+.about-left>p {
+    color: #fff;
+    margin-bottom: 57px;
+}
+.about-left>button {
+color: #fff;
+width: 240px;
+height: 65px;
+}
+.about-right {
+}
+.about-video-container {
+    position: relative;
+    display: inline-block;
+}
+.about-video-container>video {
+    width: 895px;        
+    height: auto;       
+    border-radius: 16px;
+    object-fit: cover;   /* заполняет область без искажений */
+}
+.play-button {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); /* точное центрирование */
+    cursor: pointer; /* курсор-указатель */
+    transition: transform 0.3s ease; /* плавное увеличение при наведении */
+    z-index: 10;
+    width: 80px;
+    height: 80px;
+    background: url('/images/play-white.png') center/cover no-repeat;
+}
+.play-button:hover {
+    transform: translate(-50%, -50%) scale(1.1); /* увеличение на 10% */
+}
+video:playing + .play-button {
+    display: none;
+}
+
