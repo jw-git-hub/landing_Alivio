@@ -271,13 +271,13 @@ background-size: cover;
 background-repeat: no-repeat;
 }
 .howItWorks-img1 {
-background-image: url(/images/img1.png);
+background-image: url(images/img1.png);
 }
 .howItWorks-img2 {
-background-image: url(/images/img2.png);
+background-image: url(images/img2.png);
 }
 .howItWorks-img3 {
-background-image: url(/images/img3.png);
+background-image: url(images/img3.png);
 }
 .about {
     background-color: #245852;
@@ -327,7 +327,7 @@ height: 65px;
     z-index: 10;
     width: 80px;
     height: 80px;
-    background: url('/images/play-white.png') center/cover no-repeat;
+    background: url('images/play-white.png') center/cover no-repeat;
 }
 .play-button:hover {
     transform: translate(-50%, -50%) scale(1.1); /* увеличение на 10% */
@@ -353,7 +353,7 @@ video:playing + .play-button {
 .ourProdict-photo {
     width: 839px;
     height: 573px;
-    background-image: url(/images/bg-avatar.png);
+    background-image: url(images/bg-avatar.png);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 18px;
