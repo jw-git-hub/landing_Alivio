@@ -219,8 +219,6 @@ align-items: center;
 }
 h3.howItWorks {
     color: var(--decor-color);
-    margin-right: 50px;
-    margin-bottom: 50px;
 }
 p.howItWorks {
     max-width: 671px;
