@@ -74,8 +74,9 @@
         margin-left: inherit;
     }
 
-    .content-howItWorks-block {
-        max-width: width: 100%;
+    .content-howItWorks-block, .howItWorks-img1, .howItWorks-img2, .howItWorks-img3 {
+        max-width: none;
+        width: 100%;
     }
 
     .howItWorks-img1,
