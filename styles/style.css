@@ -5,19 +5,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 .lato-regular,
-.nav>li>a, .mobile-nav>li>a, button, p.header, p.howItWorks, .howItWorks-p, .about-left>button, .name, .ourProduct-cardContainer-content li {
+.nav>li>a, .mobile-nav>li>a, button, p.header, p.howItWorks, .howItWorks-p, .about-left>button, .name, .ourProduct-cardContainer-content li, .ourProduct-flex-right>p, .ourProduct-flex-right>button {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.lato-bold, h2.howItWorks, .about-left>p, .cardContainer-header {
+.lato-bold, h2.howItWorks, .about-left>p, .cardContainer-header, .ourProduct-flex-right>h2 {
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
-.georgia-bold, h1, h3.howItWorks, .about-left>h2 .ourProduct-cardContainer-content>div {
+.georgia-bold, h1, h3.howItWorks, .about-left>h2 .ourProduct-cardContainer-content>div, .ourProduct-flex-right>h3 {
     font-family: "Georgia", serif;
     font-weight: 700;
     font-style: normal;
@@ -36,16 +36,16 @@
 .cardContainer-header {
     font-size: 14px;
 }
-.nav>li>a, .mobile-nav>li>a, button, p.header, p.howItWorks, .howItWorks-p, .about-left>button {
+.nav>li>a, .mobile-nav>li>a, button, p.header, p.howItWorks, .howItWorks-p, .about-left>button, .ourProduct-flex-right>p, .ourProduct-flex-right>button {
     font-size: 20px;
 }
 h2.howItWorks, .about-left>p {
     font-size: 24px;
 }
-.ourProduct-cardContainer-content>div {
+.ourProduct-cardContainer-content>div, .ourProduct-flex-right>h2 {
 font-size: 25px;
 }
-h3.howItWorks, .about-left>h2  {
+h3.howItWorks, .about-left>h2, .ourProduct-flex-right>h3  {
     font-size: 50px;
 }
 .howItWorks-head-numb {
@@ -347,9 +347,12 @@ video:playing + .play-button {
 .ourProduct-flex {
 }
 .ourProduct-flex-left {
+    padding-left: 60px;
+    width: 100%;
 }
 .ourProdict-photo {
-    width: 839px;
+    width: 100%;
+    max-width: 839px;
     height: 573px;
     background-image: url(../images/bg-avatar.png);
     background-size: cover;
@@ -392,5 +395,20 @@ video:playing + .play-button {
      list-style-position: inside;
      padding-left: 6px;
 }
-.ourProduct-flex-right {
+.ourProduct-flex-right>h2 {
+    color: #424242;
+    margin-bottom: 10px;
+}
+.ourProduct-flex-right>h3 {
+    color: #01996D ;
+    margin-bottom: 20px;
+}
+.ourProduct-flex-right>p {
+color: #484848;
+margin-bottom: 40px;
+}
+.ourProduct-flex-right>button {
+color: #fff;
+width: 227px;
+height: 65px;
 }

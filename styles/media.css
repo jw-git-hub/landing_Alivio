@@ -39,6 +39,14 @@
     width: 100%;
     max-width: 895px;
 }
+.ourProduct-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 161px;
+}
+.ourProdict-photo {
+    margin: 0 auto;
+}
 }
 
 @media (max-width: 1080px) {
