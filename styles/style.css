@@ -412,3 +412,18 @@ color: #fff;
 width: 227px;
 height: 65px;
 }
+
+footer {
+    background-color: #245852;
+    padding-top: 95px;
+     padding-bottom: 95px;
+}
+.footer-logo {
+    margin-bottom: 60px;
+    width: 108px;
+}
+footer ul a {
+    display: block;
+    color: #fff;
+    margin-bottom: 30px;
+}
